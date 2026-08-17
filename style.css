@@ -35,3 +35,69 @@ h1 { color: #4caf50; }
   cursor: pointer;
   font-size: 16px;
 }
+* { box-sizing: border-box; }
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #0f1117;
+  color: #eaeaea;
+  margin: 0;
+}
+.topbar {
+  background: linear-gradient(90deg, #1f7a3f, #2fae63);
+  padding: 24px 40px;
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+}
+.topbar h1 { margin: 0; font-size: 26px; }
+.tagline { color: #e6ffe9; font-size: 14px; }
+main { padding: 30px 40px; }
+.section-title { font-size: 20px; margin-bottom: 16px; color: #9fe6b8; }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 18px;
+}
+.card {
+  background: #1a1d27;
+  border: 1px solid #2a2e3a;
+  padding: 18px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.15s ease;
+}
+.card:hover { transform: translateY(-4px); border-color: #2fae63; }
+.card h3 { margin: 4px 0; }
+.card p { color: #9fe6b8; font-weight: bold; }
+.card button {
+  margin-top: 10px;
+  background: #2fae63;
+  color: white;
+  border: none;
+  padding: 9px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.card button:hover { background: #23c46b; }
+.checkout-wrap { max-width: 500px; margin: 0 auto; padding: 30px 20px; }
+.panel {
+  background: #1a1d27;
+  border: 1px solid #2a2e3a;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.panel h2 { margin-top: 0; color: #9fe6b8; }
+#pay-btn {
+  background: #2fae63;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  width: 100%;
+}
+.status { margin-top: 12px; font-size: 14px; color: #cfcfcf; }

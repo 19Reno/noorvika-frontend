@@ -5,10 +5,20 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Checkout</h1>
-  <div id="checkout-summary"></div>
-  <button id="pay-btn">Pay Now</button>
-  <p id="result"></p>
-  <script src="app.js"></script>
+  <header class="topbar">
+    <h1>🛒 Noorvika</h1>
+  </header>
+  <main class="checkout-wrap">
+    <section class="panel">
+      <h2>Order Summary</h2>
+      <div id="checkout-summary"></div>
+      <p id="order-status" class="status"></p>
+    </section>
+    <section class="panel">
+      <h2>Payment</h2>
+      <button id="pay-btn">Pay Now</button>
+      <p id="result" class="status"></p>
+    </section>
+  </main>
 </body>
 </html>

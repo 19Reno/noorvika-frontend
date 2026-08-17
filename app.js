@@ -39,6 +39,7 @@ if (document.getElementById("checkout-summary")) {
     })
       .then(res => res.json())
       .then(order => {
+        document.getElementById("order-status").innerText = `Order #${order.order_id} created — proceeding to payment...`;
         return fetch(`${API_PAYMENT}/pay`, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
