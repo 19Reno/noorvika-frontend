@@ -1,5 +1,5 @@
-const API_ORDER = "http://ORDER_SERVICE_IP:5000";
-const API_PAYMENT = "http://PAYMENT_SERVICE_IP:5001";
+const API_ORDER = "/api/orders";
+const API_PAYMENT = "/api/payments";
 
 if (document.getElementById("products")) {
   fetch(`${API_ORDER}/products`)
